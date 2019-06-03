@@ -85,7 +85,7 @@ var targetE= $(this).attr("href")
 var targetP=$(targetE).offset().top;
 
 $("html,body").animate({
-    scrollTop:targetP-120
+    scrollTop:targetP-96
 },1500)
 });
 

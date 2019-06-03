@@ -139,11 +139,11 @@ border-radius: 5px;
     top: 50%;
     transform: translate(-50%,-50%);
 }
-.fa-search{
+.fa-search,.fa-eye{
 color:  #245297;
 margin: 3px;   
 }
-.fa-search:hover{
+.fa-search:hover,.fa-eye:hover{
     transition: 100ms;
     transform: scale(1.4);
     color: #246397;
@@ -171,6 +171,19 @@ button{
     transition: all 0.2s linear, 0.3s;
     opacity: 100;
     left: 0px;
+}
+.element-item .icons .fly-up{
+    font-size: 20px;
+    transition: all 0.2s linear, 0.3s;
+    position: relative;
+    opacity: 0;
+    bottom: -200px;
+}
+.element-item:hover .icons .fly-up{
+    font-size: 20px;
+    transition: all 0.2s linear, 0.3s;
+    opacity: 100;
+    bottom: 0px;
 }
 .element-item .icons .fly-right{
     font-size: 20px;
@@ -311,7 +324,7 @@ transform: translateY(-50%)
 
     }
     .bg-light {
-        background-color: rgb(233, 233, 233)!important;
+        background-color: rgb(255, 255, 255)!important;
     }
     .fixNav #navigation{
         position: fixed;
@@ -320,7 +333,7 @@ transform: translateY(-50%)
         z-index: 10;
     transition: all 0.2s linear, 2s;
 
-        background-color: rgb(255, 255, 255)!important;
+        background-color: rgb(233, 233, 233)!important;
     }
     .nav-logo:hover{
         transform: scale(1.1);
@@ -331,7 +344,7 @@ transform: translateY(-50%)
         transition: all 0.2s linear, 0.4s;
     }
     .container-portfolio .element-item:hover{
-
+        cursor: pointer;
         transform: scale(1.05);
         transition: all 0.2s linear, 0.4s;
     }
