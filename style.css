@@ -2,11 +2,11 @@ h1{
     font-size: 100px;
 }
 .next,.prev{
-color: #245297b6;
+color: #245297bb;
 font-size: 3em;
 }
 .next:hover,.prev:hover{
-    color: #24529791;
+    color: #245297bb!important;
     font-size: 3em;
 }
 .main{
@@ -64,11 +64,11 @@ margin-bottom: 30px;
 }
 #hire-me{
     font-size: 11vh;
-    font-size: 5vw;
+    font-size: calc(40px + (26 - 14) * ((100vw - 200px) / (1600 - 300)));
 }
 #love-to-hear-from-you{
     font-size: 4vh;
-    font-size: 2vw;
+    font-size: calc(17px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 .container-portfolio{
     display: flex;
