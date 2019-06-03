@@ -140,21 +140,21 @@ border-radius: 5px;
     transform: translate(-50%,-50%);
 }
 .fa-search{
-color:  white;
+color:  #245297;
 margin: 3px;   
 }
 .fa-search:hover{
     transition: 100ms;
     transform: scale(1.4);
-    color: rgb(0, 0, 0);
+    color: #246397;
 }
 .fa-github{
-    color:  white;   
+    color:  #245297;   
     }
     .fa-github:hover{
         transition: 100ms;
         transform: scale(1.4);
-        color: rgb(0, 0, 0);
+        color: #246397;
     }
 button{
     margin: 10px;
@@ -290,7 +290,7 @@ margin: 0.5em;
 .nav-me .navbar-nav li{
     color: rgb(255, 255, 255)!important;
     position: relative;
-margin: 7px;
+margin: 2px 7px 2px 7px;
 top: 100%;
 
 }
@@ -310,44 +310,56 @@ transform: translateY(-50%)
 
     }
     .bg-light {
-        background-color: rgb(255, 255, 255)!important;
+        background-color: rgb(165, 199, 255)!important;
     }
     .fixNav #navigation{
         position: fixed;
         top: 0%;
         width: 100%;
         z-index: 10;
-    transition: all 0.2s linear, 0.3s;
+    transition: all 0.2s linear, 2s;
 
         background-color: rgb(255, 255, 255)!important;
     }
+    .nav-logo:hover{
+        transform: scale(1.1);
+        transition: all 0.2s linear, 0.4s;
+    }
+    .nav-logo{
+        transform: scale(1);
+        transition: all 0.2s linear, 0.4s;
+    }
+    .container-portfolio .element-item:hover{
 
+        transform: scale(1.05);
+        transition: all 0.2s linear, 0.4s;
+    }
+    .container-portfolio .element-item{
+        transform: scale(1);
+        transition: all 0.2s linear, 0.4s;
+    }
+  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 770px) {
     
-
+        body{
+            overflow-x: hidden!important;
+        }
+        html{
+            overflow-x: hidden!important;
+        }
+        .fixNav #navigation{
+            position: fixed;
+            top: 0%;
+            width: 100%;
+            z-index: 10;
+        transition: all 0.2s linear, 2s;
+    
+            background-color: rgb(255, 255, 255)!important;
+        }
+        .bg-light {
+            background-color: rgb(255, 255, 255)!important;
+        }
     .portfolio-h2::before{
         background-color: #245297bb;
         content: "";
