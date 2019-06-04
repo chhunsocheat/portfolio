@@ -3,14 +3,14 @@
 $(document).ready(function () {
     $('#slides').superslides({
         animation: 'fade',
-        play: 5000
+        play: 10000
     })
     var options = {
         strings: ["Web Dev", "Cyber Security", "Web dev"],
         typeSpeed: 150,
         loop: true,
         showCursor: false,
-        backSpeed: 50,
+        backSpeed: 70,
     }
     var typed = new Typed(".des", options);
 
