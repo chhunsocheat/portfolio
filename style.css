@@ -362,6 +362,19 @@ transform: translateY(-50%)
   
 
     @media only screen and (max-width: 770px) {
+        .about-me{
+            background: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: 5px 1fr 30px 2fr 2px;
+            grid-template-rows: auto auto 30vh auto;
+            grid-gap: 30px;
+            grid-template-areas: 
+            ". . . . ." 
+            ". photo photo info ." 
+            ". photo photo info ."
+            ". . . . . "
+            
+        }
         .fixNav #navigation{
             position: absolute;
             width: 100%;
