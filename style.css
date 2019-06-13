@@ -292,13 +292,16 @@ i:hover{
     color: black;
 }
 .footer-icon{
-    top: 30%;
-left: 50%;
-position: absolute;
-transform: translateX(-50%);
+   align-self: center;
 }
 .footer-container a{
 margin: 0.5em;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
 }
 .copyright{
     text-align: center;
