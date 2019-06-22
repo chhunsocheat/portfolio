@@ -21,7 +21,21 @@
     <link rel="shortcut icon" type="/dist/image/logo.png" href="/dist/img/logo.png"/>
     <title>Portfolio-Socheat Chhun</title>
 </head>
-
+<nav id="navigation" class="navigation navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="https://github.com/chhunsocheat"><img class="nav-logo" src="/dist/img/logo.png" 
+            width="70px" height="70px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav-me collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav nav-me">
+           <li> <a class="nav-item nav-link btn-search nav-a" href="#slides"><div class="nav-inner">Home</div> <span class="sr-only">(current)</span></a></li>
+           <li> <a class="nav-item nav-link btn-search nav-a" href="#about-me"><div class="nav-inner">About me</div></a></li>
+           <li> <a class="nav-item nav-link btn-search nav-a" href="#contact-me"><div class="nav-inner">Contact Me</div></a></li>
+           <li> <a class="nav-item nav-link  btn-search nav-a" href="#portfolio"><div class="nav-inner">Portfolio</div></a></li>
+          </div>
+        </div>
+      </nav>
 <body>
 
     <div id="slides">
@@ -44,22 +58,142 @@
             <a href="#" class="prev"><i class="fas fa-arrow-left"></i></a>
         </nav>
     </div>
-    <nav id="navigation" class="navigation navbar navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand" href="https://github.com/chhunsocheat"><img class="nav-logo" src="/dist/img/logo.png" 
-                width="70px" height="70px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="nav-me collapse navbar-collapse" id="navbarNavAltMarkup">
-              <ul class="navbar-nav nav-me">
-               <li> <a class="nav-item nav-link btn-search nav-a" href="#slides"><div class="nav-inner">Home</div> <span class="sr-only">(current)</span></a></li>
-               <li> <a class="nav-item nav-link btn-search nav-a" href="#about-me"><div class="nav-inner">About me</div></a></li>
-               <li> <a class="nav-item nav-link btn-search nav-a" href="#contact-me"><div class="nav-inner">Contact Me</div></a></li>
-               <li> <a class="nav-item nav-link  btn-search nav-a" href="#portfolio"><div class="nav-inner">Portfolio</div></a></li>
-              </div>
-            </div>
-          </nav>
+    
+          <div class="portfolio container" id="portfolio">
+                <div class="portfolio-container">
+                    <h2 class="container portfolio-h2">Portfolio</h2>
+                    <div class="button-group filter-button-group container">
+                        <button class="btn-edge button-toggle button-toggle-1 btn-search" data-filter="*">Show all</button>
+                        <button class="btn-edge  button-toggle button-toggle-2 btn-search" data-filter=".React">React</button>
+                        <button class="btn-edge  button-toggle button-toggle-3 btn-search" data-filter=".HTML, .CSS">HTML CSS</button>
+                        <button class="btn-edge  button-toggle button-toggle-4 btn-search" data-filter=".Javascript">Javascript</button>
+                        <button class="btn-edge  button-toggle button-toggle-5 btn-search" data-filter=".Database">Database</button>
+        
+                    </div>
+                </div>
+                <div class="grid container-portfolio React Database container">
+                        <div onclick="" class="element-item HTML CSS Javascript grid-3">
+                                <div class="icons">
+                                        <a class="fly-left"
+                                        href="http://www.mefood.tk/"
+                                        >
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a class="fly-up" href="/dist/img/meFood.PNG" data-fancybox="html" data-fancybox 
+                                    data-caption="Built with Vanilla JS using Webpack to bundle all the modules.
+                                    Used third party API to search for food and ingredient">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a class="fly-right" target="_blank" href="https://github.com/chhunsocheat/meFood2">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <img class="img-me" src="/dist/img/meFood.PNG" width="300px" height="300px" alt="">
+                            </div>
+                     <div onclick="" class="element-item React Database grid-1">
+                        <div class="icons">
+                                <a class="fly-left"
+                                href="https://smart-facial.herokuapp.com/"
+                                >
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a class="fly-up"
+                                href="/dist/img/face.PNG"
+                                data-fancybox="react" 
+                                data-fancybox 
+                                data-caption="Using third-party API to recognize face.
+                                Backend impleted with Node.js with Express.js,
+                                the site has its own API to respond to log in. Used Postgres">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <a class="fly-right" href="https://github.com/chhunsocheat/smart-brain-front">
+                                <i class="fab fa-github"></i>
+                            
+                        </div>
+                        <img class="img-me" src="/dist/img/face.PNG" width="300px" height="300px" alt="">
+                    </div>
+                
+                
+                    <div onclick="" class="element-item React grid-2">
+                        <div class="icons">
+                                <a class="fly-left"
+                                href="https://distracted-chandrasekhar-2c621e.netlify.com/"
+                                >
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a class="fly-up" href="/dist/img/graduateCountDown.PNG" data-fancybox="react" data-fancybox
+                                data-caption="Counting Down to my graduation day.Built with react and some library to make animation from react eco-system">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <a class="fly-right" href="">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <img class="img-me" src="/dist/img/graduateCountDown.PNG" width="300px" height="300px" alt="">
+                    </div>
+                   
+                    <div onclick="" class="element-item HTML CSS grid-4">
+                        <div class="icons">
+                                <a class="fly-left"
+                                target="_blank"
+                                href="https://condescending-bartik-c6be12.netlify.com/"
+                                >
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a class="fly-up" href="/dist/img/rushero.PNG" data-fancybox="html" 
+                            data-fancybox data-caption="Just a clone of the company I used to be an intern at">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <a class="fly-right" href="">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <img class="img-me" src="/dist/img/rushero.PNG" width="300px" height="300px" alt="">
+                    </div>
+                    <div onclick="" class="element-item React  grid-5">
+                        <div class="icons">
+                                <a class="fly-left"
+                                href="https://happy-easley-9ce0f2.netlify.com/"
+                                >
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a class="fly-up"
+                                href="/dist/img/dadjoke.PNG"
+                                data-fancybox="react" 
+                                data-fancybox 
+                                data-caption="Using DAD joke api to fetch joke and store it in the local browser storage">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <a class="fly-right" target="_blank" href="https://github.com/chhunsocheat/dadjoke">
+                                <i class="fab fa-github"></i>
+                            
+                        </div>
+                        <img class="img-me" src="/dist/img/dadjoke.PNG" width="300px" height="300px" alt="">
+                    </div>
+                    <div onclick="" class="element-item React  grid-6">
+                        <div class="icons">
+                                <a class="fly-left"
+                                href="https://focused-wilson-f82b5e.netlify.com/"
+                                >
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a class="fly-up"
+                                href="/dist/img/to-do-list.PNG"
+                                data-fancybox="react" 
+                                data-fancybox 
+                                data-caption="Using React Hook to create a simple
+                                to-do list without any state and store it in the local browser storage">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <a class="fly-right" target="_blank" href="https://github.com/chhunsocheat/todo-list-react-hook">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <img class="img-me" src="/dist/img/to-do-list.PNG" width="300px" height="300px" alt="">
+                    </div>
+                </div>
     <div class="about-me" id="about-me">
+        <h1 class="about-me-h1">About me</h1>
         <div class="img-me">
             <img class="img-me"
                 src="https://scontent.fsyd8-1.fna.fbcdn.net/v/t1.0-9/57186087_2251682544894091_7763786435634659328_n.jpg?_nc_cat=111&_nc_ht=scontent.fsyd8-1.fna&oh=937d272a8c26e8778a1a939df4958f77&oe=5D9C171F"
@@ -74,153 +208,21 @@
         </div>
     </div>
     <!-- <div class="contact-me-wrapper"> -->
-    <div class="contact-me" id="contact-me">
-        <h1 id="hire-me">Interested?</h1>
-        <h3 id="love-to-hear-from-you">
-            I'd love to hear from you
-        </h3>
-        <a target="_blank" href="https://drive.google.com/uc?authuser=0&id=1UUDA8Ak7dXEL9vUPSwzksgkY5npLsuqg&export=download" target="_blank" download><button download class="cv-button btn btn-search"> Check Out My
-                CV</button>
-            <!-- </div> -->
-        </a>
-    </div>
-
-    <div class="portfolio container" id="portfolio">
-        <div class="portfolio-container">
-            <h2 class="container portfolio-h2">Portfolio</h2>
-            <div class="button-group filter-button-group container">
-                <button class="btn-edge button-toggle button-toggle-1 btn-search" data-filter="*">Show all</button>
-                <button class="btn-edge  button-toggle button-toggle-2 btn-search" data-filter=".React">React</button>
-                <button class="btn-edge  button-toggle button-toggle-3 btn-search" data-filter=".HTML, .CSS">HTML CSS</button>
-                <button class="btn-edge  button-toggle button-toggle-4 btn-search" data-filter=".Javascript">Javascript</button>
-                <button class="btn-edge  button-toggle button-toggle-5 btn-search" data-filter=".Database">Database</button>
-
-            </div>
-        </div>
-        <div class="grid container-portfolio React Database container">
-                <div onclick="" class="element-item HTML CSS Javascript grid-3">
-                        <div class="icons">
-                                <a class="fly-left"
-                                href="http://www.mefood.tk/"
-                                >
-                                <i class="fas fa-eye"></i>
-                            </a>
-                            <a class="fly-up" href="/dist/img/meFood.PNG" data-fancybox="html" data-fancybox 
-                            data-caption="Built with Vanilla JS using Webpack to bundle all the modules.
-                            Used third party API to search for food and ingredient">
-                                <i class="fa fa-search"></i>
-                            </a>
-                            <a class="fly-right" target="_blank" href="https://github.com/chhunsocheat/meFood2">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                        <img class="img-me" src="/dist/img/meFood.PNG" width="300px" height="300px" alt="">
-                    </div>
-             <div onclick="" class="element-item React Database grid-1">
-                <div class="icons">
-                        <a class="fly-left"
-                        href="https://smart-facial.herokuapp.com/"
-                        >
-                        <i class="fas fa-eye"></i>
-                    </a>
-                    <a class="fly-up"
-                        href="/dist/img/face.PNG"
-                        data-fancybox="react" 
-                        data-fancybox 
-                        data-caption="Using third-party API to recognize face.
-                        Backend impleted with Node.js with Express.js,
-                        the site has its own API to respond to log in. Used Postgres">
-                        <i class="fa fa-search"></i>
-                    </a>
-                    <a class="fly-right" href="https://github.com/chhunsocheat/smart-brain-front">
-                        <i class="fab fa-github"></i>
-                    
-                </div>
-                <img class="img-me" src="/dist/img/face.PNG" width="300px" height="300px" alt="">
-            </div>
         
         
-            <div onclick="" class="element-item React grid-2">
-                <div class="icons">
-                        <a class="fly-left"
-                        href="https://distracted-chandrasekhar-2c621e.netlify.com/"
-                        >
-                        <i class="fas fa-eye"></i>
-                    </a>
-                    <a class="fly-up" href="/dist/img/graduateCountDown.PNG" data-fancybox="react" data-fancybox
-                        data-caption="Counting Down to my graduation day.Built with react and some library to make animation from react eco-system">
-                        <i class="fa fa-search"></i>
-                    </a>
-                    <a class="fly-right" href="">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <img class="img-me" src="/dist/img/graduateCountDown.PNG" width="300px" height="300px" alt="">
-            </div>
-           
-            <div onclick="" class="element-item HTML CSS grid-4">
-                <div class="icons">
-                        <a class="fly-left"
-                        target="_blank"
-                        href="https://condescending-bartik-c6be12.netlify.com/"
-                        >
-                        <i class="fas fa-eye"></i>
-                    </a>
-                    <a class="fly-up" href="/dist/img/rushero.PNG" data-fancybox="html" 
-                    data-fancybox data-caption="Just a clone of the company I used to be an intern at">
-                        <i class="fa fa-search"></i>
-                    </a>
-                    <a class="fly-right" href="">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <img class="img-me" src="/dist/img/rushero.PNG" width="300px" height="300px" alt="">
-            </div>
-            <div onclick="" class="element-item React  grid-5">
-                <div class="icons">
-                        <a class="fly-left"
-                        href="https://happy-easley-9ce0f2.netlify.com/"
-                        >
-                        <i class="fas fa-eye"></i>
-                    </a>
-                    <a class="fly-up"
-                        href="/dist/img/dadjoke.PNG"
-                        data-fancybox="react" 
-                        data-fancybox 
-                        data-caption="Using DAD joke api to fetch joke and store it in the local browser storage">
-                        <i class="fa fa-search"></i>
-                    </a>
-                    <a class="fly-right" target="_blank" href="https://github.com/chhunsocheat/dadjoke">
-                        <i class="fab fa-github"></i>
-                    
-                </div>
-                <img class="img-me" src="/dist/img/dadjoke.PNG" width="300px" height="300px" alt="">
-            </div>
-            <div onclick="" class="element-item React  grid-6">
-                <div class="icons">
-                        <a class="fly-left"
-                        href="https://focused-wilson-f82b5e.netlify.com/"
-                        >
-                        <i class="fas fa-eye"></i>
-                    </a>
-                    <a class="fly-up"
-                        href="/dist/img/to-do-list.PNG"
-                        data-fancybox="react" 
-                        data-fancybox 
-                        data-caption="Using React Hook to create a simple
-                        to-do list without any state and store it in the local browser storage">
-                        <i class="fa fa-search"></i>
-                    </a>
-                    <a class="fly-right" target="_blank" href="https://github.com/chhunsocheat/todo-list-react-hook">
-                        <i class="fab fa-github"></i>
-                    
-                </div>
-                <img class="img-me" src="/dist/img/to-do-list.PNG" width="300px" height="300px" alt="">
-            </div>
-        </div>
-
-
+        
+        
     </div>
+            <div class="contact-me" id="contact-me">
+                <h1 id="hire-me">Interested?</h1>
+                <h3 id="love-to-hear-from-you">
+                    I'd love to hear from you
+                </h3>
+                <a target="_blank" href="https://drive.google.com/uc?authuser=0&id=1UUDA8Ak7dXEL9vUPSwzksgkY5npLsuqg&export=download" target="_blank" download><button download class="cv-button btn btn-search"> Check Out My
+                        CV</button>
+                    <!-- </div> -->
+                </a>
+            </div>
     <footer>
         <div class="footer-container">
            <div class="footer-icon">
