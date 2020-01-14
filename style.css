@@ -42,7 +42,7 @@ font-size: 3em;
     grid-template-rows: auto auto 30vh auto;
     grid-gap: 30px;
     grid-template-areas: 
-    ". . . . ." 
+    ". h1 h1 h1 ." 
     ". photo photo info ." 
     ". photo photo info ."
     ". . . . . "
@@ -51,8 +51,16 @@ font-size: 3em;
 .body{
     position: relative;
 }
+.about-me-h1{
+    font-size: 11vh;
+    font-size: calc(40px + (26 - 14) * ((100vw - 200px) / (1600 - 300)));
+    grid-area:h1;
+    text-align: center;
+    margin: 0px auto;
+}
 .contact-me{
     background: #f7f7f7;
+    width: 100%!important;
     text-align: center;
     position: relative;
    left: 50%;
@@ -340,7 +348,7 @@ transform: translateY(-50%)
         width: 100%;
         z-index: 10;
     transition: all 0.2s linear, 2s;
-    background: rgb(224, 224, 224)!important;
+    background: rgb(255, 255, 255)!important;
     }
     .nav-logo:hover{
         transform: scale(1.1);
@@ -372,7 +380,7 @@ transform: translateY(-50%)
             grid-template-rows: auto auto 30vh auto;
             grid-gap: 30px;
             grid-template-areas: 
-            ". . . . ." 
+            ". h1 h1 h1 ." 
             ". photo photo info ." 
             ". photo photo info ."
             ". . . . . "
