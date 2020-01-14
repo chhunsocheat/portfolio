@@ -291,7 +291,7 @@ i:hover{
     color: blue;
 }
 #ig:hover{
-    color: rgb(209, 28, 83);
+    color: rgba(209, 28, 82, 0.959);
 }
 #ig{
     color: rgb(209, 28, 128);
