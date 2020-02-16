@@ -326,14 +326,14 @@ margin: 0.55em;
     position: relative;
 }
 .nav-me .navbar-nav li{
-    color: rgb(255, 255, 255)!important;
+    color: rgb(255, 242, 242)!important;
     position: relative;
 margin: 2px 7px 2px 7px;
 top: 100%;
 
 }
 .nav-me .nav-a:hover .nav-inner{
-    color:#244897!important;
+    color:#234ba1!important;
 
 }
 .nav-inner{
@@ -344,7 +344,7 @@ top: 50%;
 transform: translateY(-50%)
 }
 .nav-inner:hover,.nav-me .navbar-nav a:hover{
-    color: #245297!important;
+    color: #235299!important;
 
     }
     .bg-light {
